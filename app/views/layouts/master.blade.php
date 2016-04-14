@@ -7,7 +7,8 @@
 	    <title>Salon</title>
 
 	    {{-- TITLE ICON --}}
-		<link rel="shortcut icon" type="image/x-icon" href="img/apple.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="img/salon.ico">
+
 		{{-- BOOTSTRAP CSS --}}
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,7 +16,8 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 		{{-- CUSTOM FONT --}}
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
 		{{-- FONT AWESOME --}}
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -24,7 +26,11 @@
 	</head>
 	<body>
 
-		{{-- @include('partials.navbar') --}}
+		<div class="brand">Business Casual</div>
+		
+		<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+
+		@include('partials.navbar')
         
 		@if (Session::has('successMessage'))
 		    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
