@@ -42,7 +42,7 @@
 
 		@yield('content')
 
-		{{-- @include('partials.footer') --}}
+		@include('partials.footer')
 
 		<!-- JQUERY -->
 		<script src="/js/jquery-2.1.4.min.js"></script>

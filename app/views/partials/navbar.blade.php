@@ -16,16 +16,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="{{{ action('HomeController@showWelcome') }}}">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="{{{ action('HomeController@showAbout') }}}">About</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="{{{ action('HomeController@showBlog') }}}">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="{{{ action('HomeController@showContact') }}}">Contact</a>
                     </li>
                 </ul>
             </div>
