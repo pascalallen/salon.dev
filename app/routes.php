@@ -18,3 +18,5 @@ Route::get('about', 'HomeController@showAbout');
 Route::get('blog', 'HomeController@showBlog');
 
 Route::get('contact', 'HomeController@showContact');
+
+Route::resource('appointments', 'AppointmentsController');
